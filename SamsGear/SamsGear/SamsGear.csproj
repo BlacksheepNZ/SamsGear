@@ -70,9 +70,6 @@
     <Compile Include="Products\Style\SizeEntity.cs" />
     <Compile Include="Products\Style\TShirtEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\drawable\EmptyClass.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Screens\MainMenu\Adapters\CartAdapter.cs" />
     <Compile Include="Screens\MainMenu\Adapters\ColourAdapter.cs" />
@@ -111,11 +108,6 @@
     <AndroidResource Include="Resources\raw\easyDB.sqlite" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
-    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
-    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\drawable\Beatz.png" />
     <AndroidResource Include="Resources\drawable\Black.png" />
     <AndroidResource Include="Resources\drawable\Blue.png" />
