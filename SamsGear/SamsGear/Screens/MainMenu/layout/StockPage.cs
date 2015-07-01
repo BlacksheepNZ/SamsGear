@@ -38,14 +38,6 @@ namespace SamsGear
 
         //---------------------
 
-        //Button components
-
-        private ImageButton buttonDay;
-        private ImageButton buttonSell;
-        private ImageButton buttonStock;
-
-        //---------------------
-
         //Entity Refs
 
         private List<DesignEntity> design;
@@ -114,23 +106,6 @@ namespace SamsGear
 
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.StockPage);
-
-            //---------------------
-            //Load resource views
-
-            buttonDay = FindViewById<ImageButton>(Resource.Id.imageButton3);
-            buttonDay.Click += buttonDay_Click;
-
-            buttonSell = FindViewById<ImageButton>(Resource.Id.imageButton4);
-            buttonSell.Click += buttonSell_Click;
-
-            buttonStock = FindViewById<ImageButton>(Resource.Id.imageButton5);
-
-            //Local Content
-
-            buttonDay.SetImageResource(Resource.Drawable.Day);
-            buttonSell.SetImageResource(Resource.Drawable.Sell);
-            buttonStock.SetImageResource(Resource.Drawable.StockSelected);
 
             //---------------------
 
