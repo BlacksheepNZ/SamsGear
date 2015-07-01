@@ -37,14 +37,6 @@ namespace SamsGear
 
         //---------------------
 
-        //Button components
-
-        private ImageButton buttonDay;
-        private ImageButton buttonSell;
-        private ImageButton buttonStock;
-
-        //---------------------
-
         //Entity Refs
 
         private List<DesignEntity> design;
@@ -84,20 +76,6 @@ namespace SamsGear
             //Load resource views
 
             gridViewAdapter = FindViewById<GridView>(Resource.Id.gridView1);
-
-            buttonDay = FindViewById<ImageButton>(Resource.Id.imageButton3);
-
-            buttonSell = FindViewById<ImageButton>(Resource.Id.imageButton4);
-            buttonSell.Click += buttonSell_Click;
-
-            buttonStock = FindViewById<ImageButton>(Resource.Id.imageButton5);
-            buttonStock.Click += buttonStock_Click;
-
-            //---------------------
-
-            buttonDay.SetImageResource(Resource.Drawable.DaySelected);
-            buttonSell.SetImageResource(Resource.Drawable.Sell);
-            buttonStock.SetImageResource(Resource.Drawable.Stock);
 
             PopulateOrder();
         }

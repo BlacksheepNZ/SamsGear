@@ -633,14 +633,14 @@ namespace SamsGear
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f07002b
-			public const int button1 = 2131165227;
+			// aapt resource value: 0x7f070025
+			public const int button1 = 2131165221;
 			
-			// aapt resource value: 0x7f070010
-			public const int editText1 = 2131165200;
+			// aapt resource value: 0x7f07000d
+			public const int editText1 = 2131165197;
 			
-			// aapt resource value: 0x7f070011
-			public const int editText2 = 2131165201;
+			// aapt resource value: 0x7f07000e
+			public const int editText2 = 2131165198;
 			
 			// aapt resource value: 0x7f070005
 			public const int gridView1 = 2131165189;
@@ -651,38 +651,29 @@ namespace SamsGear
 			// aapt resource value: 0x7f070003
 			public const int imageButton2 = 2131165187;
 			
-			// aapt resource value: 0x7f070008
-			public const int imageButton3 = 2131165192;
+			// aapt resource value: 0x7f07000b
+			public const int imageButton3 = 2131165195;
 			
-			// aapt resource value: 0x7f070009
-			public const int imageButton4 = 2131165193;
+			// aapt resource value: 0x7f070010
+			public const int imageButton4 = 2131165200;
 			
-			// aapt resource value: 0x7f07000a
-			public const int imageButton5 = 2131165194;
+			// aapt resource value: 0x7f070011
+			public const int imageButton5 = 2131165201;
 			
-			// aapt resource value: 0x7f070013
-			public const int imageButton6 = 2131165203;
-			
-			// aapt resource value: 0x7f070023
-			public const int imageView1 = 2131165219;
-			
-			// aapt resource value: 0x7f070021
-			public const int imageView2 = 2131165217;
+			// aapt resource value: 0x7f070012
+			public const int imageButton6 = 2131165202;
 			
 			// aapt resource value: 0x7f07001d
-			public const int linearLayout1 = 2131165213;
-			
-			// aapt resource value: 0x7f07000f
-			public const int linearLayout10 = 2131165199;
-			
-			// aapt resource value: 0x7f070019
-			public const int linearLayout11 = 2131165209;
-			
-			// aapt resource value: 0x7f07001a
-			public const int linearLayout12 = 2131165210;
+			public const int imageView1 = 2131165213;
 			
 			// aapt resource value: 0x7f07001b
-			public const int linearLayout13 = 2131165211;
+			public const int imageView2 = 2131165211;
+			
+			// aapt resource value: 0x7f070017
+			public const int linearLayout1 = 2131165207;
+			
+			// aapt resource value: 0x7f07000c
+			public const int linearLayout10 = 2131165196;
 			
 			// aapt resource value: 0x7f070001
 			public const int linearLayout2 = 2131165185;
@@ -693,77 +684,68 @@ namespace SamsGear
 			// aapt resource value: 0x7f070004
 			public const int linearLayout4 = 2131165188;
 			
-			// aapt resource value: 0x7f070015
-			public const int linearLayout5 = 2131165205;
+			// aapt resource value: 0x7f070014
+			public const int linearLayout5 = 2131165204;
+			
+			// aapt resource value: 0x7f07000f
+			public const int linearLayout6 = 2131165199;
 			
 			// aapt resource value: 0x7f070007
-			public const int linearLayout6 = 2131165191;
+			public const int linearLayout7 = 2131165191;
 			
-			// aapt resource value: 0x7f07000b
-			public const int linearLayout7 = 2131165195;
+			// aapt resource value: 0x7f070008
+			public const int linearLayout8 = 2131165192;
 			
-			// aapt resource value: 0x7f07000c
-			public const int linearLayout8 = 2131165196;
+			// aapt resource value: 0x7f070013
+			public const int linearLayout9 = 2131165203;
 			
-			// aapt resource value: 0x7f070014
-			public const int linearLayout9 = 2131165204;
+			// aapt resource value: 0x7f070009
+			public const int listView1 = 2131165193;
 			
-			// aapt resource value: 0x7f07000d
-			public const int listView1 = 2131165197;
-			
-			// aapt resource value: 0x7f070012
-			public const int myButton = 2131165202;
+			// aapt resource value: 0x7f070015
+			public const int myImageView = 2131165205;
 			
 			// aapt resource value: 0x7f070016
-			public const int myImageView = 2131165206;
-			
-			// aapt resource value: 0x7f070017
-			public const int myImageViewText = 2131165207;
+			public const int myImageViewText = 2131165206;
 			
 			// aapt resource value: 0x7f070000
 			public const int relativeBackground = 2131165184;
 			
-			// aapt resource value: 0x7f070025
-			public const int relativeLayout1 = 2131165221;
+			// aapt resource value: 0x7f07001f
+			public const int relativeLayout1 = 2131165215;
 			
-			// aapt resource value: 0x7f07000e
-			public const int relativelayout = 2131165198;
+			// aapt resource value: 0x7f07000a
+			public const int relativelayout = 2131165194;
 			
 			// aapt resource value: 0x7f070018
-			public const int tabHost1 = 2131165208;
+			public const int tableLayout1 = 2131165208;
 			
-			// aapt resource value: 0x7f07001c
-			public const int tabWidget1 = 2131165212;
-			
-			// aapt resource value: 0x7f07001e
-			public const int tableLayout1 = 2131165214;
-			
-			// aapt resource value: 0x7f07001f
-			public const int tableRow2 = 2131165215;
-			
-			// aapt resource value: 0x7f07002a
-			public const int tableRow3 = 2131165226;
-			
-			// aapt resource value: 0x7f070026
-			public const int textView1 = 2131165222;
-			
-			// aapt resource value: 0x7f070028
-			public const int textView2 = 2131165224;
-			
-			// aapt resource value: 0x7f070027
-			public const int textView3 = 2131165223;
-			
-			// aapt resource value: 0x7f070029
-			public const int textView4 = 2131165225;
+			// aapt resource value: 0x7f070019
+			public const int tableRow2 = 2131165209;
 			
 			// aapt resource value: 0x7f070024
-			public const int textView5 = 2131165220;
+			public const int tableRow3 = 2131165220;
 			
 			// aapt resource value: 0x7f070020
-			public const int textView6 = 2131165216;
+			public const int textView1 = 2131165216;
 			
 			// aapt resource value: 0x7f070022
-			public const int textView7 = 2131165218;
+			public const int textView2 = 2131165218;
+			
+			// aapt resource value: 0x7f070021
+			public const int textView3 = 2131165217;
+			
+			// aapt resource value: 0x7f070023
+			public const int textView4 = 2131165219;
+			
+			// aapt resource value: 0x7f07001e
+			public const int textView5 = 2131165214;
+			
+			// aapt resource value: 0x7f07001a
+			public const int textView6 = 2131165210;
+			
+			// aapt resource value: 0x7f07001c
+			public const int textView7 = 2131165212;
 			
 			static Id()
 			{
@@ -785,37 +767,34 @@ namespace SamsGear
 			public const int FinalizeSellPage = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int Main = 2130903042;
+			public const int MainMenu = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int MainMenu = 2130903043;
+			public const int SellPage = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int SellPage = 2130903044;
+			public const int SingleCartView = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int SingleCartView = 2130903045;
+			public const int SingleColourView = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int SingleColourView = 2130903046;
+			public const int SingleDesignView = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int SingleDesignView = 2130903047;
+			public const int SingleOrderView = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int SingleOrderView = 2130903048;
+			public const int SingleProductView = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int SingleProductView = 2130903049;
+			public const int SingleStockView = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int SingleStockView = 2130903050;
+			public const int SizeView = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int SizeView = 2130903051;
-			
-			// aapt resource value: 0x7f03000c
-			public const int StockPage = 2130903052;
+			public const int StockPage = 2130903051;
 			
 			static Layout()
 			{

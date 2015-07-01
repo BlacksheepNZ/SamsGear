@@ -80,22 +80,20 @@
     <Compile Include="Screens\MainMenu\Adapters\StockAdapter.cs" />
     <Compile Include="Screens\MainMenu\layout\DayPage.cs" />
     <Compile Include="Screens\MainMenu\layout\FinalizeSellPage.cs" />
-    <Compile Include="Screens\MainMenu\layout\MainActivity.cs" />
     <Compile Include="Screens\MainMenu\layout\SellPage.cs" />
     <Compile Include="Screens\MainMenu\layout\StockPage.cs" />
+    <Compile Include="Screens\MainMenu\MainActivity .cs" />
     <Compile Include="Screens\MainMenu\OLD.cs" />
     <Compile Include="Utility.cs" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\easyDB.sqlite" />
     <AndroidResource Include="Resources\layout\FinalizeSellPage.axml" />
-    <AndroidResource Include="Resources\layout\Main.axml" />
     <AndroidResource Include="Resources\values\Strings.xml" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Resources\AboutResources.txt" />
     <AndroidResource Include="Resources\layout\DayPage.axml" />
-    <AndroidResource Include="Resources\layout\MainMenu.axml" />
     <AndroidResource Include="Resources\layout\SellPage.axml" />
     <AndroidResource Include="Resources\layout\SingleCartView.axml" />
     <AndroidResource Include="Resources\layout\SingleColourView.axml" />
@@ -106,6 +104,9 @@
     <AndroidResource Include="Resources\layout\SizeView.axml" />
     <AndroidResource Include="Resources\layout\StockPage.axml" />
     <AndroidResource Include="Resources\raw\easyDB.sqlite" />
+    <AndroidResource Include="Resources\layout\MainMenu.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\Beatz.png" />

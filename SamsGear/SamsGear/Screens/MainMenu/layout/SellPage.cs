@@ -41,19 +41,6 @@ namespace SamsGear
 
         //---------------------
 
-        //Button components
-
-        private ImageButton buttonSearch;
-        private ImageButton buttonPay;
-
-        private ImageButton buttonDay;
-        private ImageButton buttonSell;
-        private ImageButton buttonStock;
-
-        private ImageButton buttonChangeView;
-
-        //---------------------
-
         //Entity Refs
 
         private List<DesignEntity> design;
@@ -119,8 +106,6 @@ namespace SamsGear
 
         protected override void OnCreate(Bundle bundle)
         {
-            //Initialize database
-            INIDatabase();
 
             //              Database layout
             //
@@ -163,28 +148,6 @@ namespace SamsGear
             listCart = FindViewById<ListView>(Resource.Id.listView1);
             listCart.ItemClick += listCart_ItemClick;
 
-            buttonDay = FindViewById<ImageButton>(Resource.Id.imageButton3);
-            buttonDay.Click += buttonDay_Click;
-
-            buttonSell = FindViewById<ImageButton>(Resource.Id.imageButton4);
-
-            buttonStock = FindViewById<ImageButton>(Resource.Id.imageButton5);
-            buttonStock.Click += buttonStock_Click;
-
-            buttonPay = FindViewById<ImageButton>(Resource.Id.imageButton1);
-            buttonPay.Click += buttonPay_Click;
-
-            buttonChangeView = FindViewById<ImageButton>(Resource.Id.imageButton6);
-            buttonChangeView.Click += buttonChangeView_Click;
-
-            buttonChangeView.SetImageResource(Resource.Drawable.UpArrow);
-
-            //Local Content
-
-            buttonDay.SetImageResource(Resource.Drawable.Day);
-            buttonSell.SetImageResource(Resource.Drawable.SellSelected);
-            buttonStock.SetImageResource(Resource.Drawable.Stock);
-
             //---------------------
 
             finalCartItem = new List<Tuple<int, int, int, int>>();
@@ -215,7 +178,7 @@ namespace SamsGear
         {
             if (currentSelected == OrderType.Ascending)
             {
-                buttonChangeView.SetImageResource(Resource.Drawable.UpArrow);
+                //buttonChangeView.SetImageResource(Resource.Drawable.UpArrow);
                 designImages = Order(designImages, currentSelected);
 
                 //switch
@@ -224,7 +187,7 @@ namespace SamsGear
             }
             else if (currentSelected == OrderType.Descending)
             {
-                buttonChangeView.SetImageResource(Resource.Drawable.DownArrow);
+                //buttonChangeView.SetImageResource(Resource.Drawable.DownArrow);
                 designImages = Order(designImages, currentSelected);
 
                 //switch
@@ -280,17 +243,6 @@ namespace SamsGear
                 //catch any errors
                 throw ex;
             }
-        }
-
-        public void INIDatabase()
-        {
-            //Reads from local database file
-            //Transfers file to device
-
-            var readStream = Resources.OpenRawResource(Resource.Raw.easyDB);
-            FileStream writeStream = new FileStream(Database.databasePath, FileMode.OpenOrCreate, FileAccess.Write);
-            Database.ReadWriteStream(readStream, writeStream);
-            writeStream.Close();
         }
 
         private void LoadDesignImages()

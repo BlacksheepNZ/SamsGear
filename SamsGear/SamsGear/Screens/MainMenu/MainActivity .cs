@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using System.IO;
+
+namespace SamsGear
+{
+    [Activity(Label = "Sams Gear", MainLauncher = true, Icon = "@drawable/icon", ScreenOrientation = Android.Content.PM.ScreenOrientation.Landscape, Theme = "@android:style/Theme.NoTitleBar")]
+    public class MainActivity : TabActivity
+    {
+        protected override void OnCreate(Bundle bundle)
+        {
+            //need to change this later on release
+            INIDatabase(); //preload database on device
+
+            base.OnCreate(bundle);
+            SetContentView(Resource.Layout.MainMenu);
+
+            CreateTab(typeof(DayPage), "Day", "", Resource.Drawable.Day); //need resource image
+            CreateTab(typeof(SellPage), "Sell", "", Resource.Drawable.Sell); //need resource image
+            CreateTab(typeof(StockPage), "Stock", "", Resource.Drawable.Stock); //need resource image
+        }
+
+        private void CreateTab(Type activityType, string tag, string label, int drawableId)
+        {
+            var intent = new Intent(this, activityType);
+            intent.AddFlags(ActivityFlags.NewTask);
+
+            var spec = TabHost.NewTabSpec(tag);
+            var drawableIcon = Resources.GetDrawable(drawableId);
+            spec.SetIndicator(label, drawableIcon);
+            spec.SetContent(intent);
+
+            TabHost.AddTab(spec);
+        }
+
+        public void INIDatabase()
+        {
+            //Reads from local database file
+            //Transfers file to device
+
+            var readStream = Resources.OpenRawResource(Resource.Raw.easyDB);
+            FileStream writeStream = new FileStream(Database.databasePath, FileMode.OpenOrCreate, FileAccess.Write);
+            Database.ReadWriteStream(readStream, writeStream);
+            writeStream.Close();
+        }
+    }
+}
