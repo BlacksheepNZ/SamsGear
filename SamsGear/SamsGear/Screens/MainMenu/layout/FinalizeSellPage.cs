@@ -48,6 +48,29 @@ namespace SamsGear
             }
         }
 
+        protected override void OnRestart()
+        {
+            try
+            {
+                SetContentView(Resource.Layout.FinalizeSellPage);
+
+                buttonPay = FindViewById<ImageButton>(Resource.Id.imageButton3);
+                buttonPay.Click += buttonPay_Click;
+
+                name = FindViewById<EditText>(Resource.Id.editText1);
+                email = FindViewById<EditText>(Resource.Id.editText2);
+
+                ListView listCart = FindViewById<ListView>(Resource.Id.listView1);
+                listCart.Adapter = new CartAdapter(this, SellPage.cartItems);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            base.OnRestart();
+        }
+
         //private void PopulateView()
         //{
         //    cost.Text = MainActivity.totalcost.ToString();
@@ -98,7 +121,7 @@ namespace SamsGear
                 SellPage.cartItems.Clear();
                 SellPage.finalCartItem.Clear();
 
-                var MainPage = new Intent(this, typeof(SellPage));
+                var MainPage = new Intent(this, typeof(MainActivity));
                 StartActivity(MainPage);
             }
             catch(Exception ex)

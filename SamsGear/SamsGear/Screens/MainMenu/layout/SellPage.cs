@@ -495,7 +495,7 @@ namespace SamsGear
 
                     //remove item from stock
                     List<DesignTShirtEntity> indexDesign = design[selectedDesign].DesignTShirtEntity;
-                    selectedTShirt = indexDesign[selectedDesign].IDTShirt;
+                    selectedTShirt = indexDesign[selectedTShirtSize].IDTShirt;
 
                     using (var db = new Database())
                     {

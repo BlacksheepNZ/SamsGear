@@ -24,9 +24,20 @@ namespace SamsGear
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.MainMenu);
 
-            CreateTab(typeof(DayPage), "Day", "", Resource.Drawable.Day); //need resource image
-            CreateTab(typeof(SellPage), "Sell", "", Resource.Drawable.Sell); //need resource image
-            CreateTab(typeof(StockPage), "Stock", "", Resource.Drawable.Stock); //need resource image
+            CreateTab(typeof(DayPage), "", "", Resource.Drawable.Day);
+            CreateTab(typeof(SellPage), "", "", Resource.Drawable.Sell);
+            CreateTab(typeof(StockPage), "", "", Resource.Drawable.Stock);
+        }
+
+        protected override void OnRestart()
+        {
+            SetContentView(Resource.Layout.MainMenu);
+
+            CreateTab(typeof(DayPage), "", "", Resource.Drawable.Day);
+            CreateTab(typeof(SellPage), "", "", Resource.Drawable.Sell);
+            CreateTab(typeof(StockPage), "", "", Resource.Drawable.Stock);
+
+            base.OnRestart();
         }
 
         private void CreateTab(Type activityType, string tag, string label, int drawableId)

@@ -9,8 +9,7 @@
         p1:layout_width="match_parent"
         p1:layout_height="728.2dp"
         p1:id="@+id/linearLayout2"
-        p1:background="@android:color/background_light"
-        p1:layout_marginTop="100px">
+        p1:background="@android:color/background_light">
         <LinearLayout
             p1:orientation="vertical"
             p1:layout_width="110px"
@@ -58,23 +57,6 @@
                         p1:layout_marginBottom="25dp"
                         p1:dividerHeight="10px"
                         p1:layout_gravity="center" />
-                    <RelativeLayout
-                        p1:id="@+id/relativelayout"
-                        p1:layout_width="410px"
-                        p1:layout_height="60dp"
-                        p1:gravity="center"
-                        p1:layout_marginTop="30px"
-                        p1:layout_marginBottom="30px"
-                        p1:minWidth="25px"
-                        p1:minHeight="25px">
-                        <ImageButton
-                            p1:src="@drawable/PayButton"
-                            p1:id="@+id/imageButton3"
-                            p1:scaleType="centerInside"
-                            p1:background="#9C9C9C"
-                            p1:layout_width="wrap_content"
-                            p1:layout_height="wrap_content" />
-                    </RelativeLayout>
                     <LinearLayout
                         p1:orientation="vertical"
                         p1:layout_width="match_parent"
@@ -95,6 +77,23 @@
                             p1:id="@+id/editText2"
                             p1:text="email" />
                     </LinearLayout>
+                    <RelativeLayout
+                        p1:id="@+id/relativelayout"
+                        p1:layout_width="410px"
+                        p1:layout_height="60dp"
+                        p1:gravity="center"
+                        p1:layout_marginTop="30px"
+                        p1:layout_marginBottom="30px"
+                        p1:minWidth="25px"
+                        p1:minHeight="25px">
+                        <ImageButton
+                            p1:src="@drawable/PayButton"
+                            p1:id="@+id/imageButton3"
+                            p1:scaleType="centerInside"
+                            p1:background="#9C9C9C"
+                            p1:layout_width="wrap_content"
+                            p1:layout_height="wrap_content" />
+                    </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -114,45 +113,5 @@
                 p1:layout_gravity="center"
                 p1:background="#9C9C9C" />
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        p1:orientation="horizontal"
-        p1:layout_width="match_parent"
-        p1:id="@+id/linearLayout6"
-        p1:background="@drawable/topshaddow"
-        p1:layout_height="100px"
-        p1:gravity="center">
-        <ImageButton
-            p1:layout_width="wrap_content"
-            p1:layout_height="98px"
-            p1:id="@+id/imageButton3"
-            p1:src="@drawable/Day"
-            p1:scaleType="fitXY"
-            p1:layout_gravity="center_horizontal"
-            p1:baselineAlignBottom="true"
-            p1:fitsSystemWindows="true"
-            p1:adjustViewBounds="true"
-            p1:cropToPadding="false"
-            p1:background="@android:color/transparent" />
-        <ImageButton
-            p1:layout_width="wrap_content"
-            p1:layout_height="98px"
-            p1:id="@+id/imageButton4"
-            p1:src="@drawable/Sell"
-            p1:scaleType="fitXY"
-            p1:adjustViewBounds="true"
-            p1:cropToPadding="false"
-            p1:layout_gravity="center_horizontal"
-            p1:background="@android:color/transparent" />
-        <ImageButton
-            p1:layout_width="wrap_content"
-            p1:layout_height="98px"
-            p1:id="@+id/imageButton5"
-            p1:src="@drawable/Stock"
-            p1:cropToPadding="false"
-            p1:adjustViewBounds="true"
-            p1:layout_gravity="center_horizontal"
-            p1:scaleType="fitXY"
-            p1:background="@android:color/transparent" />
     </LinearLayout>
 </RelativeLayout>
