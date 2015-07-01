@@ -117,6 +117,7 @@
                     p1:layout_width="match_parent"
                     p1:layout_height="match_parent"
                     p1:id="@+id/listView1"
+                    p1:descendantFocusability="blocksDescendants"
                     p1:background="#B7B7B7"
                     p1:paddingLeft="30px"
                     p1:dividerHeight="10px"

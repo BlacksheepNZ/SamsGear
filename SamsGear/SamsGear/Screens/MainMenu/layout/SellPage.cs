@@ -39,6 +39,8 @@ namespace SamsGear
 
         private TextView cost;
 
+        private ImageButton finalSell;
+
         //---------------------
 
         //Entity Refs
@@ -153,6 +155,9 @@ namespace SamsGear
             finalCartItem = new List<Tuple<int, int, int, int>>();
             cartItems = new List<Tuple<string, string, string, decimal>>();
 
+            finalSell = FindViewById<ImageButton>(Resource.Id.imageButton1);
+            finalSell.Click += buttonPay_Click;
+
             //---------------------
 
             LoadDesignImages();
@@ -162,14 +167,11 @@ namespace SamsGear
             PopulateProductList();
         }
 
-        private void buttonStock_Click(object sender, EventArgs e)
+        protected override void OnRestart()
         {
-            StartActivity(new Intent(this, typeof(StockPage)));
-        }
+            PopulateProductList();
 
-        private void buttonDay_Click(object sender, EventArgs e)
-        {
-            StartActivity(new Intent(this, typeof(DayPage)));
+            base.OnRestart();
         }
 
         OrderType currentSelected = OrderType.Ascending;
@@ -541,10 +543,17 @@ namespace SamsGear
         //Remove item from cart
         private void listCart_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            //if (cartItems.Count() > 0)
-            //{
-
-            //}
+            try
+            {
+                if (cartItems.Count() > 0)
+                {
+                    cartItems.RemoveAt((int)e.Position);
+                    listCart.Adapter = new CartAdapter(this, cartItems);
+                }
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
 
             UpdateCost();
         }

@@ -113,14 +113,11 @@ namespace SamsGear
             PopulateStockList();
         }
 
-        void buttonSell_Click(object sender, EventArgs e)
+        protected override void OnRestart()
         {
-            StartActivity(new Intent(this, typeof(SellPage)));
-        }
+            PopulateStockList();
 
-        void buttonDay_Click(object sender, EventArgs e)
-        {
-            StartActivity(new Intent(this, typeof(DayPage)));
+            base.OnRestart();
         }
 
         /// <summary>
