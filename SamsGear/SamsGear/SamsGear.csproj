@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{3EC78528-0812-4D45-9113-E6921FED7770}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SamsGear</RootNamespace>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>SamsGear</AssemblyName>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.Net">
+      <HintPath>..\packages\SQLite.Net-PCL.3.0.5\lib\net40\SQLite.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.Net.Platform.XamarinAndroid">
+      <HintPath>..\packages\SQLite.Net-PCL.3.0.5\lib\MonoAndroid\SQLite.Net.Platform.XamarinAndroid.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLiteNetExtensions">
+      <HintPath>..\packages\SQLiteNetExtensions.1.3.0\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\SQLiteNetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\Database.cs" />
+    <Compile Include="LoginActivity.cs" />
+    <Compile Include="Products\Order\OrderEntity.cs" />
+    <Compile Include="Products\Order\ORM\OrderProductEntity.cs" />
+    <Compile Include="Products\Order\ProductEntity.cs" />
+    <Compile Include="Products\Style\ColourEntity.cs" />
+    <Compile Include="Products\Style\DesignEntity.cs" />
+    <Compile Include="Products\Style\ORM\DesignTShirtEntity.cs" />
+    <Compile Include="Products\Style\ORM\TShirtColourEntity.cs" />
+    <Compile Include="Products\Style\ORM\TShirtSizeEntity.cs" />
+    <Compile Include="Products\Style\SizeEntity.cs" />
+    <Compile Include="Products\Style\TShirtEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\drawable\EmptyClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Screens\MainMenu\Adapters\CartAdapter.cs" />
+    <Compile Include="Screens\MainMenu\Adapters\ColourAdapter.cs" />
+    <Compile Include="Screens\MainMenu\Adapters\DesignAdapter.cs" />
+    <Compile Include="Screens\MainMenu\Adapters\OrderAdapter.cs" />
+    <Compile Include="Screens\MainMenu\Adapters\ProductAdapter.cs" />
+    <Compile Include="Screens\MainMenu\Adapters\SizeAdapter.cs" />
+    <Compile Include="Screens\MainMenu\Adapters\StockAdapter.cs" />
+    <Compile Include="Screens\MainMenu\layout\DayPage.cs" />
+    <Compile Include="Screens\MainMenu\layout\FinalizeSellPage.cs" />
+    <Compile Include="Screens\MainMenu\layout\MainActivity.cs" />
+    <Compile Include="Screens\MainMenu\layout\SellPage.cs" />
+    <Compile Include="Screens\MainMenu\layout\StockPage.cs" />
+    <Compile Include="Screens\MainMenu\OLD.cs" />
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\easyDB.sqlite" />
+    <AndroidResource Include="Resources\layout\FinalizeSellPage.axml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <None Include="Resources\AboutResources.txt" />
+    <AndroidResource Include="Resources\layout\DayPage.axml" />
+    <AndroidResource Include="Resources\layout\MainMenu.axml" />
+    <AndroidResource Include="Resources\layout\SellPage.axml" />
+    <AndroidResource Include="Resources\layout\SingleCartView.axml" />
+    <AndroidResource Include="Resources\layout\SingleColourView.axml" />
+    <AndroidResource Include="Resources\layout\SingleDesignView.axml" />
+    <AndroidResource Include="Resources\layout\SingleOrderView.axml" />
+    <AndroidResource Include="Resources\layout\SingleProductView.axml" />
+    <AndroidResource Include="Resources\layout\SingleStockView.axml" />
+    <AndroidResource Include="Resources\layout\SizeView.axml" />
+    <AndroidResource Include="Resources\layout\StockPage.axml" />
+    <AndroidResource Include="Resources\raw\easyDB.sqlite" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable\Beatz.png" />
+    <AndroidResource Include="Resources\drawable\Black.png" />
+    <AndroidResource Include="Resources\drawable\Blue.png" />
+    <AndroidResource Include="Resources\drawable\Blues.png" />
+    <AndroidResource Include="Resources\drawable\Bulu.png" />
+    <AndroidResource Include="Resources\drawable\buttonshape.xml" />
+    <AndroidResource Include="Resources\drawable\CarolinaBlue.png" />
+    <AndroidResource Include="Resources\drawable\CartTitle.png" />
+    <AndroidResource Include="Resources\drawable\CookIslands.png" />
+    <AndroidResource Include="Resources\drawable\Day.png" />
+    <AndroidResource Include="Resources\drawable\DaySelected.png" />
+    <AndroidResource Include="Resources\drawable\DownArrow.png" />
+    <AndroidResource Include="Resources\drawable\FiaBotz.png" />
+    <AndroidResource Include="Resources\drawable\Fobzilla.png" />
+    <AndroidResource Include="Resources\drawable\HeatherGrey.png" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable\iFob.png" />
+    <AndroidResource Include="Resources\drawable\iFobMini.png" />
+    <AndroidResource Include="Resources\drawable\Lime.png" />
+    <AndroidResource Include="Resources\drawable\MaoriStrong.png" />
+    <AndroidResource Include="Resources\drawable\Maroon.png" />
+    <AndroidResource Include="Resources\drawable\Maroons.png" />
+    <AndroidResource Include="Resources\drawable\Navy.png" />
+    <AndroidResource Include="Resources\drawable\NiueStrong.png" />
+    <AndroidResource Include="Resources\drawable\ObeyDeez.png" />
+    <AndroidResource Include="Resources\drawable\PayButton.png" />
+    <AndroidResource Include="Resources\drawable\Red.png" />
+    <AndroidResource Include="Resources\drawable\RoyalBlue.png" />
+    <AndroidResource Include="Resources\drawable\SearchButton.png" />
+    <AndroidResource Include="Resources\drawable\Sell.png" />
+    <AndroidResource Include="Resources\drawable\SellSelected.png" />
+    <AndroidResource Include="Resources\drawable\SonsSth.png" />
+    <AndroidResource Include="Resources\drawable\SportGrey.png" />
+    <AndroidResource Include="Resources\drawable\Stock.png" />
+    <AndroidResource Include="Resources\drawable\StockSelected.png" />
+    <AndroidResource Include="Resources\drawable\ToaSamoa.png" />
+    <AndroidResource Include="Resources\drawable\TokoUso.png" />
+    <AndroidResource Include="Resources\drawable\topshaddow.xml" />
+    <AndroidResource Include="Resources\drawable\UpArrow.png" />
+    <AndroidResource Include="Resources\drawable\Usos.png" />
+    <AndroidResource Include="Resources\drawable\Warriors.png" />
+    <AndroidResource Include="Resources\drawable\White.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\color.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+</Project>

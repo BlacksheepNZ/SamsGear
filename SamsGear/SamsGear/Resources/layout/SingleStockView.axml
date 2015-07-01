@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:id="@+id/linearLayout1"
+        android:background="#FFFFFF">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="85.9dp"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout2">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout3">
+                <TextView
+                    android:text="Colour"
+                    android:id="@+id/textView4"
+                    android:textColor="#000000"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="9.9dp" />
+                <TextView
+                    android:text="Size"
+                    android:id="@+id/textView5"
+                    android:textColor="#000000"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:layout_marginLeft="6.2dp" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tableLayout1">
+            <TableRow
+                android:id="@+id/tableRow2">
+                <TextView
+                    android:text="NZ Stock"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_column="0"
+                    android:id="@+id/textView3"
+                    android:textAlignment="center"
+                    android:layout_height="37dp"
+                    android:layout_width="48.0dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="8dp" />
+                <EditText
+                    android:layout_column="1"
+                    android:id="@+id/editText1"
+                    android:text="10"
+                    android:layout_width="41.6dp"
+                    android:background="#000000"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3">
+                <TextView
+                    android:text="AU Stock"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_column="0"
+                    android:id="@+id/textView3"
+                    android:textAlignment="center"
+                    android:layout_height="37dp"
+                    android:layout_width="50dp"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="8dp" />
+                <EditText
+                    android:layout_column="1"
+                    android:id="@+id/editText2"
+                    android:text="10"
+                    android:background="#000000"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+            <Button
+                android:text="Submit"
+                android:id="@+id/button1"
+                android:background="#000000"
+                android:textColor="#FFFFFF" />
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

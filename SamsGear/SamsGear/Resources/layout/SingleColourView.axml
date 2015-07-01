@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:background="#FFFFFF"
+        android:paddingTop="10px"
+        android:paddingRight="10px"
+        android:paddingBottom="10px"
+        android:paddingLeft="10px">
+        <RelativeLayout
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout1">
+            <ImageView
+                android:id="@+id/imageView1"
+                android:src="@drawable/Blue"
+                android:background="@color/white"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="false"
+                android:cropToPadding="false"
+                android:layout_width="250px"
+                android:layout_height="250px" />
+            <TextView xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/myImageViewText"
+                android:layout_width="250px"
+                android:layout_height="250px"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_alignRight="@+id/imageView1"
+                android:layout_alignBottom="@+id/imageView1"
+                android:layout_margin="1dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                tools:text="Colour"
+                android:layout_gravity="center" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

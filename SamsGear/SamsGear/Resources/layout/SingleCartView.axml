@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="350px"
+        android:layout_height="150px"
+        android:id="@+id/linearLayout1">
+        <TableLayout
+            android:layout_width="350px"
+            android:layout_height="150px"
+            android:id="@+id/tableLayout1">
+            <TableRow
+                android:id="@+id/tableRow2">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_column="0"
+                    android:id="@+id/linearLayout2"
+                    android:layout_height="150px"
+                    android:layout_width="100px"
+                    android:gravity="center">
+                    <TextView
+                        android:text="Colour"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="#000000" />
+                    <ImageView
+                        android:src="@android:drawable/ic_menu_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="5dp"
+                        android:id="@+id/imageView2" />
+                    <TextView
+                        android:text="Size"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView7"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="#000000" />
+                </LinearLayout>
+                <ImageView
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:layout_column="1"
+                    android:id="@+id/imageView1"
+                    android:layout_height="150px"
+                    android:layout_width="150px" />
+                <TextView
+                    android:text="00.00"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:layout_column="2"
+                    android:id="@+id/textView5"
+                    android:layout_height="150px"
+                    android:layout_width="100px"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#000000" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="SamsGear\SamsGear.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus9" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SamsGear\MainActivity.cs">
+    <Files>
+      <File FileName="SamsGear\MainActivity.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
