@@ -24,33 +24,49 @@ namespace SamsGear
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.MainMenu);
 
-            CreateTab(typeof(DayPage), "", "", Resource.Drawable.Day);
-            CreateTab(typeof(SellPage), "", "", Resource.Drawable.Sell);
-            CreateTab(typeof(StockPage), "", "", Resource.Drawable.Stock);
+            CreateTab(typeof(DayPage), Resource.Drawable.DayButton);
+            CreateTab(typeof(SellPage), Resource.Drawable.SellButton);
+            CreateTab(typeof(StockPage), Resource.Drawable.StockButton);
+
+            SetBackground(TabHost);
         }
 
         protected override void OnRestart()
         {
             SetContentView(Resource.Layout.MainMenu);
 
-            CreateTab(typeof(DayPage), "", "", Resource.Drawable.Day);
-            CreateTab(typeof(SellPage), "", "", Resource.Drawable.Sell);
-            CreateTab(typeof(StockPage), "", "", Resource.Drawable.Stock);
+            CreateTab(typeof(DayPage), Resource.Drawable.DayButton);
+            CreateTab(typeof(SellPage), Resource.Drawable.SellButton);
+            CreateTab(typeof(StockPage), Resource.Drawable.StockButton);
+
+            SetBackground(TabHost);
 
             base.OnRestart();
         }
 
-        private void CreateTab(Type activityType, string tag, string label, int drawableId)
+        private void CreateTab(Type activityType, int drawableId)
         {
             var intent = new Intent(this, activityType);
             intent.AddFlags(ActivityFlags.NewTask);
 
-            var spec = TabHost.NewTabSpec(tag);
+            var spec = TabHost.NewTabSpec("");
             var drawableIcon = Resources.GetDrawable(drawableId);
-            spec.SetIndicator(label, drawableIcon);
+            spec.SetIndicator("", drawableIcon);
             spec.SetContent(intent);
 
             TabHost.AddTab(spec);
+        }
+
+        public void SetBackground(TabHost tabhost)
+        {
+            for (int i = 0; i < tabhost.TabWidget.ChildCount; i++)
+            {
+                tabhost.TabWidget.GetChildAt(i).SetBackgroundResource(Resource.Color.white); //unselected
+            }
+            tabhost.TabWidget.GetChildAt(tabhost.CurrentTab).SetBackgroundResource(Resource.Color.white); // selected
+            tabhost.TabWidget.StripEnabled = true;
+            tabhost.TabWidget.SetLeftStripDrawable(Resource.Color.Gray);
+            tabhost.TabWidget.SetRightStripDrawable(Resource.Color.Gray);
         }
 
         public void INIDatabase()
