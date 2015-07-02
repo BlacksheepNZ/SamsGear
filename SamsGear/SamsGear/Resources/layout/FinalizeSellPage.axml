@@ -56,7 +56,10 @@
                         p1:layout_height="300dp"
                         p1:layout_marginBottom="25dp"
                         p1:dividerHeight="10px"
-                        p1:layout_gravity="center" />
+                        p1:layout_gravity="center"
+                        p1:divider="@android:color/transparent"
+                        p1:descendantFocusability="blocksDescendants"
+                        p1:paddingLeft="30px" />
                     <LinearLayout
                         p1:orientation="vertical"
                         p1:layout_width="match_parent"

@@ -18,6 +18,7 @@ namespace SamsGear
     {
         protected override void OnCreate(Bundle bundle)
         {
+            this.Window.ClearFlags(WindowManagerFlags.Fullscreen);
             //need to change this later on release
             INIDatabase(); //preload database on device
 
@@ -29,6 +30,7 @@ namespace SamsGear
             CreateTab(typeof(StockPage), Resource.Drawable.StockButton);
 
             SetBackground(TabHost);
+            TabHost.CurrentTab = 1;
         }
 
         protected override void OnRestart()
@@ -40,6 +42,7 @@ namespace SamsGear
             CreateTab(typeof(StockPage), Resource.Drawable.StockButton);
 
             SetBackground(TabHost);
+            TabHost.CurrentTab = 1;
 
             base.OnRestart();
         }
